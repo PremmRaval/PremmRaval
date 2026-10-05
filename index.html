@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Prem Raval | Computer Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Prem Raval - B.Tech Computer Engineering Candidate at NMIMS MPSTME, Mobile & Web Developer, ML Specialist, and Published Researcher.">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Orbs for Ambient Glassmorphism -->
+  <div class="bg-glow-container" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-brand">
+        <img src="nmims_logo.png" alt="NMIMS MPSTME Logo" class="nav-brand-logo">
+        <span class="nav-brand-text">Prem Raval</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="Prem_Raval_Resume.pdf" target="_blank" download class="btn btn-primary btn-sm">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span> Available for Engineering Internships
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Prem Raval</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span id="typingText"></span>
+          </div>
+
+          <div class="university-banner">
+            <img src="nmims_logo.png" alt="NMIMS Logo">
+            <div class="university-banner-text">
+              <strong>Mukesh Patel School of Technology Management & Engineering</strong>
+              NMIMS Deemed-to-be University, Mumbai
+            </div>
+          </div>
+
+          <p class="hero-description">
+            B.Tech Computer Engineering candidate (Class of 2027) building accessible web systems, cross-platform mobile apps, and machine learning models. Published author with hands-on technical internship experience.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View Projects
+            </a>
+            <a href="Prem_Raval_Resume.pdf" target="_blank" class="btn btn-secondary">
+              <i class="fas fa-file-pdf"></i> View Resume PDF
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <img src="profile_photo.png" alt="Prem Raval Profile Picture" class="avatar-img">
+          </div>
+
+          <!-- Sleek Non-Blocking Floating Badges -->
+          <div class="floating-card card-tech">
+            <div class="floating-icon"><i class="fas fa-code"></i></div>
+            <div class="floating-info">
+              <h5>Python & Mobile</h5>
+              <p>Android • Flutter</p>
+            </div>
+          </div>
+
+          <div class="floating-card card-pub">
+            <div class="floating-icon"><i class="fas fa-journal-whills"></i></div>
+            <div class="floating-info">
+              <h5>Published Author</h5>
+              <p>IJIRCCE (2023)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats Cards -->
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-number gradient-text">4+</div>
+          <div class="stat-label">Major & Minor Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text">80%+</div>
+          <div class="stat-label">CNN Classification Accuracy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text">1</div>
+          <div class="stat-label">International Publication</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text">2027</div>
+          <div class="stat-label">NMIMS B.Tech Class</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag"><i class="fas fa-user"></i> Overview</div>
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="section-subtitle">A computer engineer passionate about accessible tech and intelligent software systems.</p>
+      </div>
+
+      <div class="experience-card reveal" style="max-width: 900px; margin: 0 auto;">
+        <p style="font-size: 1.08rem; line-height: 1.8; color: var(--text-muted);">
+          I am a 3rd-year B.Tech Computer Engineering student at NMIMS MPSTME Mumbai, holding a prior Diploma in Computer Engineering (78%). My core domain focus encompasses <strong>Python engineering, Android/Flutter app development, data analytics, and Deep Learning (CNNs)</strong>.
+          <br><br>
+          I thrive on turning ideas into functional software—from developing an accessibility-verified web portal for disabled job candidates to engineering automated hostel resident software and 80%+ accurate CNN image classifiers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag"><i class="fas fa-briefcase"></i> Experience</div>
+        <h2 class="section-title">Internship History</h2>
+        <p class="section-subtitle">Real-world development experience in analytics and application engineering.</p>
+      </div>
+
+      <div class="experience-timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Computer Engineer Intern</h3>
+                <div class="exp-company">Static.Int Educare</div>
+              </div>
+              <div class="exp-date">
+                <i class="far fa-calendar-alt"></i> June 2022 – August 2022 (2 Months)
+              </div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Executed data analysis tasks and constructed automated processing scripts in Python.</li>
+              <li>Engineered cross-platform and native mobile prototypes using Android Studio and Flutter.</li>
+              <li>Investigated Blockchain primitives for decentralized data security solutions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag"><i class="fas fa-layer-group"></i> Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Selected software solutions across web, machine learning, mobile, and game development.</p>
+      </div>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web & Accessibility</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="game">Game Dev</button>
+      </div>
+
+      <div class="projects-grid reveal">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web">
+          <div>
+            <div class="project-tag-banner">
+              <span class="project-category"><i class="fas fa-universal-access"></i> Major Project</span>
+              <span class="project-year">2023</span>
+            </div>
+            <h3 class="project-title">Job Portal for Disabled People</h3>
+            <p class="project-desc">
+              Accessibility-focused web platform enabling disabled candidates to upload verification documents, build ATS resumes, and apply for verified jobs.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Web Accessibility</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">SQL</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <button class="view-details-btn" data-project="job-portal">
+              Case Details <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="ml">
+          <div>
+            <div class="project-tag-banner">
+              <span class="project-category"><i class="fas fa-brain"></i> Minor Project</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Image Classification using CNN</h3>
+            <p class="project-desc">
+              Convolutional Neural Network trained to classify multi-class image datasets with over 80% accuracy.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">CNN</span>
+              <span class="tech-badge">Deep Learning</span>
+              <span class="tech-badge">Data Science</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <button class="view-details-btn" data-project="cnn-classifier">
+              Case Details <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="mobile">
+          <div>
+            <div class="project-tag-banner">
+              <span class="project-category"><i class="fas fa-mobile-alt"></i> Minor Project</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Hostel Connect Mobile App</h3>
+            <p class="project-desc">
+              Android application simplifying student hostel life—centralizing maintenance requests, pass tracking, and hostel announcements.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Android SDK</span>
+              <span class="tech-badge">Android Studio</span>
+              <span class="tech-badge">SQLite</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <button class="view-details-btn" data-project="hostel-connect">
+              Case Details <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="game">
+          <div>
+            <div class="project-tag-banner">
+              <span class="project-category"><i class="fas fa-gamepad"></i> Minor Project</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Fun Tracer Game</h3>
+            <p class="project-desc">
+              Interactive 2D educational game in Unity Engine recreating letter tracing in a colorful digital environment.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Unity Engine</span>
+              <span class="tech-badge">C#</span>
+              <span class="tech-badge">2D Game Design</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <button class="view-details-btn" data-project="fun-tracer">
+              Case Details <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag"><i class="fas fa-microchip"></i> Capabilities</div>
+        <h2 class="section-title">Technical Stack & Expertise</h2>
+        <p class="section-subtitle">Core languages, framework toolsets, and machine learning competencies.</p>
+      </div>
+
+      <div class="skills-grid-new reveal">
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-box-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem; color: var(--text-main);">Languages</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Core Programming & Scripting</p>
+            </div>
+          </div>
+          <div class="skill-chips-container">
+            <div class="skill-chip"><i class="fab fa-python"></i> Python <span class="skill-chip-tag">Primary</span></div>
+            <div class="skill-chip"><i class="fas fa-code"></i> C++ <span class="skill-chip-tag">Core Stack</span></div>
+            <div class="skill-chip"><i class="fab fa-js"></i> JavaScript <span class="skill-chip-tag">Web</span></div>
+            <div class="skill-chip"><i class="fas fa-database"></i> SQL <span class="skill-chip-tag">Data</span></div>
+            <div class="skill-chip"><i class="fab fa-html5"></i> HTML5 & CSS3 <span class="skill-chip-tag">UI</span></div>
+            <div class="skill-chip"><i class="fas fa-chart-line"></i> R Language <span class="skill-chip-tag">Analytics</span></div>
+          </div>
+        </div>
+
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-box-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem; color: var(--text-main);">Mobile & Game Dev</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Application Frameworks</p>
+            </div>
+          </div>
+          <div class="skill-chips-container">
+            <div class="skill-chip"><i class="fab fa-android"></i> Android SDK <span class="skill-chip-tag">Native</span></div>
+            <div class="skill-chip"><i class="fas fa-mobile"></i> Flutter <span class="skill-chip-tag">Cross-Platform</span></div>
+            <div class="skill-chip"><i class="fas fa-cubes"></i> Unity Engine <span class="skill-chip-tag">2D Games</span></div>
+            <div class="skill-chip"><i class="fas fa-tools"></i> Android Studio <span class="skill-chip-tag">IDE</span></div>
+          </div>
+        </div>
+
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-box-icon"><i class="fas fa-brain"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem; color: var(--text-main);">AI & Data Analytics</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Intelligent Systems</p>
+            </div>
+          </div>
+          <div class="skill-chips-container">
+            <div class="skill-chip"><i class="fas fa-network-wired"></i> CNN Models <span class="skill-chip-tag">Deep Learning</span></div>
+            <div class="skill-chip"><i class="fas fa-chart-bar"></i> Data Analysis <span class="skill-chip-tag">Pandas/Numpy</span></div>
+            <div class="skill-chip"><i class="fas fa-robot"></i> Script Automation <span class="skill-chip-tag">Python</span></div>
+            <div class="skill-chip"><i class="fas fa-eye"></i> Image Classification <span class="skill-chip-tag">Vision</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag"><i class="fas fa-graduation-cap"></i> Academics</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic qualifications and degree profile.</p>
+      </div>
+
+      <div class="education-grid reveal">
+        <div class="edu-card">
+          <span class="edu-badge"><i class="fas fa-university"></i> Degree Candidate</span>
+          <h3 class="edu-degree">B.Tech in Computer Engineering</h3>
+          <p class="edu-institution">Mukesh Patel School of Technology Management & Engineering (NMIMS), Mumbai</p>
+          <div class="edu-footer">
+            <span>Class of 2027 (3rd Year)</span>
+            <span class="edu-score">CGPA: 2.5 / 4.00</span>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-badge"><i class="fas fa-certificate"></i> Diploma</span>
+          <h3 class="edu-degree">Diploma in Computer Engineering</h3>
+          <p class="edu-institution">Thakur Polytechnic (Zagdu Singh Charitable Trust) – MSBTE</p>
+          <div class="edu-footer">
+            <span>Completed 2023</span>
+            <span class="edu-score">Score: 78%</span>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <span class="edu-badge"><i class="fas fa-school"></i> High School</span>
+          <h3 class="edu-degree">Secondary School Certificate (Class X)</h3>
+          <p class="edu-institution">St. Xavier's High School, Mira Road – SSC Board</p>
+          <div class="edu-footer">
+            <span>Completed 2020</span>
+            <span class="edu-score">Score: 75%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section (WITH DIRECT ARTICLE LINK) -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag"><i class="fas fa-book"></i> Research</div>
+        <h2 class="section-title">Research Publication</h2>
+        <p class="section-subtitle">Peer-reviewed research paper published in an international journal.</p>
+      </div>
+
+      <div class="feature-box reveal" style="max-width: 850px; margin: 0 auto;">
+        <div style="display: flex; align-items: flex-start; gap: 1.2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(99, 102, 241, 0.15); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+            <i class="fas fa-journal-whills"></i>
+          </div>
+          <div style="flex-grow: 1;">
+            <h3 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.4rem;">
+              “Helping People with Disability: Recruitment for Disables”
+            </h3>
+            <p style="color: var(--accent-secondary); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem;">
+              Authors: Prem Raval, Shrey Shah, Krish Shah, Veer Jani
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.92rem;">
+              Published in <em>International Journal of Innovative Research in Computer and Communication Engineering (IJIRCCE)</em>
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem 1.4rem; background: rgba(255, 255, 255, 0.03); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <div style="font-size: 0.88rem; color: var(--text-muted);">
+            <strong style="color: var(--text-main);">Volume 11, Issue 4</strong> • April 2023
+          </div>
+
+          <a href="https://www.ijircce.com/article/helping-people-with-disability-recruitment-for-disablesprem-raval-shrey-shah-krish-shah-veer-ja-14352" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);">
+            Read Full Article <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES & BEYOND CODE SECTION -->
+  <section class="section" id="hobbies">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag"><i class="fas fa-heart"></i> Personal Interests</div>
+        <h2 class="section-title">Beyond Code</h2>
+        <p class="section-subtitle">A subtle look at what inspires me outside of engineering and programming.</p>
+      </div>
+
+      <div class="hobbies-grid reveal">
+        <div class="hobby-card hobby-gaming">
+          <div class="hobby-header">
+            <div class="hobby-icon"><i class="fas fa-gamepad"></i></div>
+            <div>
+              <h3 class="hobby-title">Gaming Enthusiast</h3>
+              <div class="hobby-subtitle">Interactive Worlds & Tactical Strategy</div>
+            </div>
+          </div>
+          <p class="hobby-desc">
+            Passionate about detailed 2D/3D game mechanics, open-world RPG storytelling, and high-tempo tactical shooters. Gaming fuels my interest in game development engines like Unity!
+          </p>
+          <div class="hobby-tags">
+            <span class="hobby-tag-pill">Open-World RPGs</span>
+            <span class="hobby-tag-pill">Tactical FPS</span>
+            <span class="hobby-tag-pill">Unity 2D/3D</span>
+            <span class="hobby-tag-pill">Level Design</span>
+          </div>
+        </div>
+
+        <div class="hobby-card hobby-travel">
+          <div class="hobby-header">
+            <div class="hobby-icon"><i class="fas fa-plane-departure"></i></div>
+            <div>
+              <h3 class="hobby-title">Travelling & Exploring</h3>
+              <div class="hobby-subtitle">New Horizons & Architectural Trails</div>
+            </div>
+          </div>
+          <p class="hobby-desc">
+            Love exploring scenic mountain trails, coastal cities, and historical architecture. Travelling provides fresh perspectives, sharpens problem-solving resilience, and recharges creativity.
+          </p>
+          <div class="hobby-tags">
+            <span class="hobby-tag-pill">Scenic Trails</span>
+            <span class="hobby-tag-pill">City Photography</span>
+            <span class="hobby-tag-pill">Architecture</span>
+            <span class="hobby-tag-pill">Wanderlust</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle" style="margin-bottom: 2rem;">
+          Currently open for internship opportunities in Software Engineering, Mobile Apps, and Data Analytics.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:premraval0770@gmail.com" class="contact-pill">
+            <i class="fas fa-envelope"></i> premraval0770@gmail.com
+          </a>
+          <a href="tel:+918828475318" class="contact-pill">
+            <i class="fas fa-phone-alt"></i> +91 8828475318
+          </a>
+          <button class="contact-pill" id="copyEmailBtn" style="cursor: pointer;">
+            <i class="far fa-copy"></i> Copy Email
+          </button>
+        </div>
+
+        <div>
+          <a href="Prem_Raval_Resume.pdf" target="_blank" download class="btn btn-primary">
+            <i class="fas fa-file-pdf"></i> Download Official Resume PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Prem Raval • NMIMS MPSTME Computer Engineering</p>
+    </div>
+  </footer>
+
+  <!-- Modal Component -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+        <span id="modalCategory" style="font-size: 0.85rem; font-weight: 700; color: var(--accent-secondary); text-transform: uppercase;"></span>
+        <span id="modalYear" style="font-size: 0.85rem; color: var(--text-subtle);"></span>
+      </div>
+      <h3 id="modalTitle" style="font-size: 1.8rem; margin-bottom: 1.2rem; color: var(--text-main);"></h3>
+      <div id="modalDesc" style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.8rem;"></div>
+      <div style="margin-top: 1.5rem;">
+        <h4 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.8rem;">Technologies Used:</h4>
+        <div id="modalTechStack" class="tech-stack"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-notification" id="toast">
+    <i class="fas fa-check-circle" style="color: #10b981;"></i>
+    <span class="toast-msg">Notification Message</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
